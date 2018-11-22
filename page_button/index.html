@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>jQuery翻页插件simplePagination</title>
+
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="page_button.js"></script>
+
+<link type="text/css" rel="stylesheet" href="page_button.css"/>
+
+<style type="text/css">
+    a{text-decoration:none}
+    .page{margin:30px auto;width:620px}
+</style>
+</head>
+<body>
+<h1>演示1</h1>
+<div id="paging1" class="page"></div>
+
+<h1>演示2</h1>
+<div id="paging2" class="page"></div>
+
+<h1>演示3</h1>
+<div id="paging3" class="page"></div>
+
+<script type="text/javascript">
+
+$(function(){
+
+    $("#paging1").pagination({
+
+        items: 100,
+
+        itemsOnPage: 10,
+
+        cssStyle: 'light-theme'
+
+    });
+
+});
+
+
+
+$(function(){
+
+    $("#paging2").pagination({
+
+        items: 100,
+
+        itemsOnPage: 10,
+
+        cssStyle: 'dark-theme'
+
+    });
+
+});
+
+
+
+$(function(){
+
+    $("#paging3").pagination({
+
+        items: 100,
+
+        itemsOnPage: 10,
+
+        cssStyle: 'compact-theme'
+
+    });
+
+});
+
+</script>
+
+</body>
+
+</html>
